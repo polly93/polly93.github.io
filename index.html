@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="Jungmin Yoo — data analyst and economics researcher portfolio."
+  />
+  <meta name="theme-color" content="#17223b" />
+  <title>Jungmin Yoo | Data Analyst & Economics Researcher</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary navigation">
+      <a class="brand" href="#top" aria-label="Jungmin Yoo home">JY</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links">
+        Menu
+      </button>
+      <div class="nav-links" id="nav-links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+        <div class="language-switch" aria-label="Language selection">
+          <a href="index.html" aria-current="page">EN</a>
+          <span class="divider">|</span>
+          <a href="ko/index.html" lang="ko">한국어</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">DATA ANALYTICS · ECONOMICS RESEARCH</p>
+          <h1>Jungmin Yoo</h1>
+          <p class="hero-title">Data Analyst &amp; Economics Researcher</p>
+          <p class="hero-summary">
+            I turn complex economic and business questions into structured data,
+            rigorous analysis, and decision-ready insights.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">View selected projects</a>
+            <a class="button button-secondary" href="assets/Jungmin_Yoo_Resume_site.pdf">
+              View résumé
+            </a>
+          </div>
+          <p class="availability">
+            Open to data analytics, research, strategy, and decision-support roles.
+          </p>
+        </div>
+
+        <aside class="hero-panel" aria-label="Profile highlights">
+          <div class="metric">
+            <span class="metric-value">1.3M+</span>
+            <span class="metric-label">housing transactions processed</span>
+          </div>
+          <div class="metric">
+            <span class="metric-value">6,000+</span>
+            <span class="metric-label">API search keywords transformed</span>
+          </div>
+          <div class="metric">
+            <span class="metric-value">100K+</span>
+            <span class="metric-label">soil records used for ML</span>
+          </div>
+          <div class="metric">
+            <span class="metric-value">6</span>
+            <span class="metric-label">applied analytics case studies</span>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container two-column">
+        <div>
+          <p class="section-kicker">ABOUT</p>
+          <h2>Analysis grounded in economics and built for real decisions.</h2>
+        </div>
+        <div class="body-copy">
+          <p>
+            I am an economics-trained analyst with experience constructing large,
+            analysis-ready datasets and applying econometrics, statistical modeling,
+            machine learning, and visualization to policy and market questions.
+          </p>
+          <p>
+            My work spans diverse industry and policy areas, including banking, housing, and environmental policy. 
+            Across projects, I focus on a structured analytical approach,
+            careful interpretation, and clear communication of results and limitations.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-tinted" id="projects">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">PROJECTS</p>
+            <!-- <h2>From raw data to an actionable story.</h2> -->
+            <h2> Selected Projects </h2>
+          </div>
+          <!-- <p>
+            Each case study is organized around the problem, data workflow, method,
+            evidence, and practical interpretation.
+          </p> -->
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-meta">
+              <span class="project-number">01</span>
+              <span class="project-status">Featured case study</span>
+            </div>
+            <h3>Do Local Real Estate Brokers Affect Housing Prices?</h3>
+            <p class="project-subtitle">
+              Seoul apartment resale transactions and broker-location patterns
+            </p>
+            <p>
+              Developed broker-type features from a transaction-level dataset and 
+              estimated hedonic regressions with fixed effects 
+              to examine associations between broker location, housing prices, and information frictions.
+            </p>
+            <div class="project-facts">
+              <span>170,744 estimation observations</span>
+              <span>Panel regression with fixed effects</span>
+              <span>Geographic matching</span>
+            </div>
+            <div class="tag-row">
+              <span>Python</span><span>QGIS</span><span>Econometrics</span>
+            </div>
+            <div class="project-links">
+              <a href="projects/housing-market.html">Details(will be revised)</a>
+              <!-- <a href="https://github.com/YOUR_GITHUB_USERNAME/housing-market-analysis">
+                Repository
+              </a> -->
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-meta">
+              <span class="project-number">02</span>
+              <span class="project-status">Policy simulation</span>
+            </div>
+            <h3>Plastic Bottle Policy Simulation</h3>
+            <p class="project-subtitle">
+              Consumer demand, firm responses, environmental trade-offs
+            </p>
+            <p>
+              Estimated demand and supply in the beverage market and 
+              evaluated counterfactual bans and taxes on beverages sold in small plastic bottles, 
+              quantifying changes in consumer welfare, firm profits, product substitution, and plastic use.
+            </p>
+            <div class="tag-row">
+              <span>Structural IO</span><span>GMM</span><span>Counterfactuals</span><span>Python</span>
+            </div>
+            <div class="project-links">
+              <a href="projects/plastic-policy.html">Details(will be revised)</a>
+              <!-- <a href="https://github.com/YOUR_GITHUB_USERNAME/plastic-policy-simulation">
+                Repository
+              </a> -->
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-meta">
+              <span class="project-number">03</span>
+              <span class="project-status">Banking regulation</span>
+            </div>
+
+            <h3>Loan-to-Deposit Ratio and Internet-Only Bank Lending Regulation</h3>
+            <p class="project-subtitle">
+              Loan-to-Deposit Ratio Comparison and Exploratory Regulatory Analysis
+            </p>
+            <p>
+            Collected loan-to-deposit ratio data from multiple sources, 
+            visualized trends across banks and over time, 
+            and explored how easing corporate-lending restrictions on internet-only banks 
+            could affect competition and financial inclusion across different loan markets.
+            </p>
+            <div class="tag-row">
+              <span>Banking</span>
+              <span>Financial Regulation</span>
+              <span>EDA</span>
+              <span>Data Visualization</span>
+            </div>
+            <div class="project-links">
+              <a href="projects/loan-to-deposit-regulation.html">Details(will be revised)</a>
+              <!-- <a href="https://github.com/YOUR_GITHUB_USERNAME/loan-to-deposit-regulation-analysis">
+                Repository
+              </a> -->
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-meta">
+              <span class="project-number">04</span>
+              <span class="project-status">API data pipeline</span>
+            </div>
+            <h3>Bank Branch Search Trends</h3>
+            <p class="project-subtitle">
+              Measuring consumer interest during banking’s digital transition
+            </p>
+            <p>
+              Collected API-based search data using more than 6,000 branch-specific
+              keywords, transformed the results into a panel dataset, and analyzed
+              how consumer interest changed as banks reduced their physical branch networks.
+            </p>
+            <div class="tag-row">
+              <span>Banking</span><span>Digital Transformation</span><span>Python</span><span>API</span><span>EDA</span>
+            </div>
+            <div class="project-links">
+              <a href="projects/bank-branches.html">Details(will be revised)</a>
+              <!-- <a href="https://github.com/YOUR_GITHUB_USERNAME/bank-branch-search-analysis">
+                Repository
+              </a> -->
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-meta">
+              <span class="project-number">05</span>
+              <span class="project-status">Demand analysis</span>
+            </div>
+            <h3>Domestic Airline Passenger Demand</h3>
+            <p class="project-subtitle">
+              Structural estimation of airline demand in monthly origin–destination markets
+            </p>
+            <p>
+              Constructed an origin–destination-by-month dataset covering domestic
+              aviation markets and applied discrete-choice demand analysis to study
+              passenger substitution across airlines and ground transportation.
+            </p>
+            <div class="tag-row">
+              <span>Demand Estimation</span><span>Market Analysis</span><span>Python</span><span>Stata</span>
+            </div>
+            <div class="project-links">
+              <a href="projects/Domestic_airline_demand.pdf">Details</a>
+              <!-- <a href="https://github.com/YOUR_GITHUB_USERNAME/airline-demand-analysis">
+                Repository
+              </a> -->
+            </div>
+          </article>
+
+
+          <article class="project-card">
+            <div class="project-meta">
+              <span class="project-number">06</span>
+              <span class="project-status">Machine learning</span>
+            </div>
+            <h3>Land-Use Recommendation Chatbot</h3>
+            <p class="project-subtitle">
+              Classification using large-scale soil information
+            </p>
+            <p>
+              Cleaned and transformed more than 100,000 soil records and 
+              trained a neural-network classifier to recommend appropriate land-use categories.
+              Collaborated with engineers to integrate the model into a prototype chatbot.
+            </p>
+            <div class="tag-row">
+              <span>Python</span><span>R</span><span>ML/DL</span><span>Keras</span><span>DNN</span>
+            </div>
+            <div class="project-links">
+              <a href="projects/soil-chatbot.html">Details(will be revised)</a>
+              <!-- <a href="https://github.com/YOUR_GITHUB_USERNAME/soil-recommendation-chatbot">
+                Repository
+              </a> -->
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">SKILLS</p>
+            <h2>Technical / Language Skills</h2>
+          </div>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-card">
+            <h3>Programming Language </h3>
+            <p>&middot; Python (pandas, Numpy, Matplotlib,<br> &nbsp; scikit-learn, statsmodels)</p>
+            <p>&middot; Stata, R, QGIS, SQL</p>
+            <p>&middot; MS Office (Excel, PowerPoint)</p>
+          </div>
+          <!-- <div class="skill-card">
+            <h3>Statistics &amp; Econometrics</h3>
+            <p>Structural IO model, Regression, Fixed effects/Random effects, Causal Inference</p>
+          </div> -->
+          <div class="skill-card">
+            <h3>Machine Learning / Deep Learning</h3>
+            <p>&middot; Neural network, Keras, scikit-learn</p>
+            <p>&middot; Classification, Feature engineering, <br> &nbsp; Model evaluation</p>
+          </div>
+          <div class="skill-card">
+            <h3>English &amp; Korean</h3>
+            <p>&middot; English : fluent</p>
+            <p>&middot; Korean : Native</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section" id="certifications">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">SKILLS</p>
+            <h2>Certifications</h2>
+          </div>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-card">
+            <h3>SQL </h3>
+            <p>&middot; HackerRank SQL (Advanced)</p>
+            <br>
+             &nbsp; <a href="https://www.linkedin.com/in/jungmin-yoo-jmy/details/certifications/">Details</a>
+          </div>
+          <div class="skill-card">
+            <h3>Data science / Data analysis</h3>
+            <p>&middot; Python for Data Science, AI & Development</p>
+            <p>&middot; Data Analysis with Python</p>
+            <br>
+             &nbsp; <a href="https://www.linkedin.com/in/jungmin-yoo-jmy/details/certifications/">Details</a>
+          </div>
+          <div class="skill-card">
+            <h3>Big Data Analysis and Deep Learning Program (government-funded)</h3>
+            <p>&middot; Completed intensive training in big data <br>
+              &nbsp; analytics and deep learning.</p>
+            <p>&middot; Nov 2018 - Mar 2019</p>
+            <p>&middot; Received an Excellence Award.</p>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+
+    
+
+    <!-- <section class="section process-section">
+      <div class="container">
+        <p class="section-kicker">HOW I WORK</p>
+        <div class="process-grid">
+          <div class="process-step">
+            <span>01</span>
+            <h3>Define</h3>
+            <p>Translate an open-ended business or policy issue into testable questions.</p>
+          </div>
+          <div class="process-step">
+            <span>02</span>
+            <h3>Build</h3>
+            <p>Collect, clean, merge, document, and validate the data needed for analysis.</p>
+          </div>
+          <div class="process-step">
+            <span>03</span>
+            <h3>Analyze</h3>
+            <p>Select methods that fit the question and test the robustness of the evidence.</p>
+          </div>
+          <div class="process-step">
+            <span>04</span>
+            <h3>Communicate</h3>
+            <p>Convert technical results into clear findings, caveats, and next actions.</p>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <section class="section contact-section" id="contact">
+      <div class="container contact-card">
+        <div>
+          <p class="section-kicker">CONTACT</p>
+          <h2>Let’s connect.</h2>
+          <p>
+            I am interested in analytical roles where rigorous data work supports
+            business, policy, or strategic decisions.
+          </p>
+        </div>
+        <div class="contact-links">
+          <a href="mailto:junmin0415@gmail.com">Email</a>
+          <a href="https://www.linkedin.com/in/jungmin-yoo-jmy">LinkedIn</a>
+          <a href="https://github.com/polly93">GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Jungmin Yoo</span>
+      <span>Built with HTML, CSS, and GitHub Pages.</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

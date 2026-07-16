@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A transaction-level study of broker location, local information, and apartment resale prices in Seoul." />
+  <title>Do Local Real Estate Brokers Affect Housing Prices? | Jungmin Yoo</title>
+  <link rel="stylesheet" href="../styles.css" />
+  <style>
+    .case-hero { padding: 88px 0 54px; background: var(--surface-soft); }
+    .case-hero h1 { max-width: 900px; font-size: clamp(2.6rem, 6vw, 5rem); }
+    .case-summary { max-width: 800px; color: var(--muted); font-size: 1.15rem; }
+    .case-content { max-width: 850px; }
+    .case-content section { padding: 34px 0; border-bottom: 1px solid var(--line); }
+    .case-content h2 { font-size: 2rem; }
+    .case-content li { margin-bottom: 0.55rem; color: var(--muted); }
+    .case-note { padding: 20px; background: var(--surface-soft); border-left: 4px solid var(--accent); }
+    .back-link { display: inline-block; margin-bottom: 1.2rem; color: var(--accent); font-weight: 800; }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="brand" href="../index.html">JY</a>
+      <div class="nav-links">
+        <a href="../index.html#projects">Projects</a>
+        <a href="../index.html#skills">Skills</a>
+        <a href="../index.html#contact">Contact</a>
+        <div class="language-switch" aria-label="Language selection">
+          <a href="housing-market.html" aria-current="page">EN</a>
+          <span class="divider">|</span>
+          <a href="../ko/projects/housing-market.html" lang="ko">한국어</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="case-hero">
+      <div class="container">
+        <a class="back-link" href="../index.html#projects">← Back to projects</a>
+        <p class="section-kicker">HOUSING MARKET ANALYTICS</p>
+        <h1>Do Local Real Estate Brokers Affect Housing Prices?</h1>
+        <p class="case-summary">A transaction-level study of broker location, local information, and apartment resale prices in Seoul.</p>
+      </div>
+    </section>
+    <div class="container case-content">
+      <section>
+        <p class="section-kicker">PROBLEM</p>
+        <h2>Can broker geography reveal information frictions?</h2>
+        <p>The project asks whether the locations of buyer- and seller-side brokers are systematically associated with transaction prices, after accounting for property characteristics and fixed effects.</p>
+      </section>
+      <section>
+        <p class="section-kicker">DATA & WORKFLOW</p>
+        <h2>Building an analysis-ready dataset</h2>
+        <ul><li>Integrated transaction, broker, regional, and geographic data.</li><li>Created local/nonlocal broker classifications and market-comparison features.</li><li>Prepared a reduced-form estimation sample of 170,744 broker-mediated transactions.</li></ul>
+      </section>
+      <section>
+        <p class="section-kicker">METHOD</p>
+        <h2>Hedonic panel regression</h2>
+        <p>Estimated log-price specifications with property controls, time fixed effects, apartment fixed effects, and broker-location indicators. Results are treated as observational associations rather than causal estimates.</p>
+      </section>
+      <section>
+        <p class="section-kicker">INTERPRETATION</p>
+        <h2>What the analysis contributes</h2>
+        <p>The project demonstrates end-to-end data engineering, feature construction, fixed-effects modeling, empirical judgment, and the ability to communicate both findings and identification limits.</p>
+        <p class="case-note"><strong>Portfolio note:</strong> Replace this starter copy with charts, final results, repository links, and a short discussion of limitations.</p>
+      </section>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© Jungmin Yoo</span>
+      <a href="../index.html">Return home</a>
+    </div>
+  </footer>
+</body>
+</html>

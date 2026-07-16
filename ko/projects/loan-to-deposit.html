@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="여러 자료원의 예대율을 교차검증하고 인터넷전문은행의 기업대출 규제 완화 가능성을 탐색적으로 검토한 분석입니다."
+  />
+  <title>예대율 규제와 인터넷전문은행의 기업대출 | 유정민</title>
+  <link rel="stylesheet" href="../../styles.css" />
+  <style>
+    .case-hero { padding: 88px 0 54px; background: var(--surface-soft); }
+    .case-hero h1 { max-width: 980px; font-size: clamp(2.6rem, 6vw, 5rem); }
+    .case-summary { max-width: 860px; color: var(--muted); font-size: 1.15rem; }
+    .case-content { max-width: 920px; }
+    .case-content section { padding: 38px 0; border-bottom: 1px solid var(--line); }
+    .case-content h2 { font-size: 2rem; }
+    .case-content h3 { margin: 1.4rem 0 0.45rem; font-size: 1.12rem; }
+    .case-content li { margin-bottom: 0.65rem; color: var(--muted); }
+    .back-link { display: inline-block; margin-bottom: 1.2rem; color: var(--accent); font-weight: 800; }
+    .overview-grid, .scenario-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 24px;
+    }
+    .overview-card, .scenario-card {
+      padding: 22px;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: #fff;
+    }
+    .overview-card span {
+      display: block;
+      margin-bottom: 0.45rem;
+      color: var(--accent);
+      font-size: 0.76rem;
+      font-weight: 850;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+    .overview-card p, .scenario-card p { margin: 0; color: var(--muted); }
+    .chart-frame {
+      margin: 26px 0 0;
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: #fff;
+    }
+    .chart-frame img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+    }
+    .chart-frame figcaption {
+      margin-top: 12px;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+    .method-flow {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 22px;
+    }
+    .method-step {
+      padding: 18px;
+      border-radius: 14px;
+      background: var(--surface-soft);
+    }
+    .method-step strong { display: block; margin-bottom: 0.4rem; }
+    .method-step p { margin: 0; color: var(--muted); font-size: 0.9rem; }
+    .case-note {
+      padding: 20px;
+      background: var(--surface-soft);
+      border-left: 4px solid var(--accent);
+    }
+    .project-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+      margin-top: 24px;
+    }
+    @media (max-width: 760px) {
+      .overview-grid, .scenario-grid, .method-flow { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="brand" href="../index.html">JY</a>
+      <div class="nav-links">
+        <a href="../index.html#projects">프로젝트</a>
+        <a href="../index.html#skills">기술</a>
+        <a href="../index.html#contact">연락처</a>
+        <div class="language-switch" aria-label="언어 선택">
+          <a href="../../projects/loan-to-deposit-regulation.html">EN</a>
+          <span class="divider">|</span>
+          <a href="loan-to-deposit-regulation.html" aria-current="page">한국어</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="case-hero">
+      <div class="container">
+        <a class="back-link" href="../index.html#projects">← 프로젝트 목록으로</a>
+        <p class="section-kicker">은행 규제 · 시장 분석</p>
+        <h1>예대율 규제와 인터넷전문은행의 기업대출</h1>
+        <p class="case-summary">
+          여러 자료원에서 예대율 수치를 확인하고 정의와 보고 시점을 교차검증한 뒤,
+          현황을 그래프로 시각화했습니다. 또한 인터넷전문은행의 기업대출 규제가
+          완화될 경우 사업모델과 대출 포트폴리오에 나타날 수 있는 변화를 탐색적으로 검토했습니다.
+        </p>
+        <div class="project-actions">
+          <a class="button button-primary" href="#analysis">분석 보기</a>
+          <a class="button button-secondary" href="https://github.com/YOUR_GITHUB_USERNAME/loan-to-deposit-regulation-analysis">
+            저장소 보기
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <div class="container case-content">
+      <section>
+        <p class="section-kicker">프로젝트 개요</p>
+        <h2>건전성 규제지표를 은행의 경쟁전략과 연결해 살펴봤습니다.</h2>
+        <p>
+          이 프로젝트는 예대율 규제가 은행의 대출 확대 여력에 어떤 제약을 줄 수 있는지,
+          그리고 기업대출 관련 규제의 유연성이 인터넷전문은행의 가계대출 중심 구조를
+          다변화할 가능성을 만들 수 있는지에 대한 실무적 질문에서 시작했습니다.
+        </p>
+
+        <div class="overview-grid">
+          <div class="overview-card">
+            <span>분석 질문</span>
+            <p>은행별·자료원별로 보고된 예대율은 어떤 차이를 보이는가?</p>
+          </div>
+          <div class="overview-card">
+            <span>정책 관점</span>
+            <p>기업대출 규제가 완화될 경우 어떤 방향의 변화가 가능할까?</p>
+          </div>
+          <div class="overview-card">
+            <span>분석 결과물</span>
+            <p>자료 교차검증, 현황 비교 그래프, 탐색적 규제 시나리오 검토</p>
+          </div>
+          <div class="overview-card">
+            <span>해석 범위</span>
+            <p>현황 파악과 방향성 검토이며, 인과효과나 재무상태를 예측한 분석은 아닙니다.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="analysis">
+        <p class="section-kicker">데이터 및 검증</p>
+        <h2>여러 자료원의 예대율을 교차검증했습니다.</h2>
+        <p>
+          예대율은 자료원에 따라 보고 시점, 기관 분류, 회계 범위,
+          규제상 산식이 다를 수 있습니다. 따라서 하나의 수치만 사용하는 대신
+          복수의 자료를 비교하고, 서로 비교 가능한 기준인지 확인했습니다.
+        </p>
+
+        <div class="method-flow">
+          <div class="method-step">
+            <strong>1. 수집</strong>
+            <p>여러 공개 자료에서 은행별·업권별 예대율 수치를 수집했습니다.</p>
+          </div>
+          <div class="method-step">
+            <strong>2. 기준 정렬</strong>
+            <p>보고 시점, 단위, 포함 범위, 예대율 정의를 확인했습니다.</p>
+          </div>
+          <div class="method-step">
+            <strong>3. 차이 검토</strong>
+            <p>자료 간 차이를 기록하고 비교 가능한 관측치를 선별했습니다.</p>
+          </div>
+          <div class="method-step">
+            <strong>4. 시각화</strong>
+            <p>검증된 값을 은행 및 업권별 비교 그래프로 정리했습니다.</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <p class="section-kicker">현황 시각화</p>
+        <h2>은행별 예대율 수준을 그래프로 비교했습니다.</h2>
+        <p>
+          그래프를 통해 은행 간 차이와 인터넷전문은행의 상대적 위치를 한눈에 확인할 수 있도록 했습니다.
+          다만 수치를 해석할 때는 각 자료의 기준일과 산식을 함께 확인해야 합니다.
+        </p>
+
+        <figure class="chart-frame">
+          <!-- 아래 SVG를 실제 그래프로 교체하거나 src 경로를 수정하세요. -->
+          <img
+            src="../../assets/images/loan-to-deposit-ratio-chart-ko.svg"
+            alt="은행별 예대율 비교 그래프를 넣기 위한 자리"
+          />
+          <figcaption>
+            위 이미지를 실제 그래프로 교체하세요. 권장 캡션:
+            “은행별·보고 시점별 예대율. 자료: [자료원 이름].”
+          </figcaption>
+        </figure>
+      </section>
+
+      <section>
+        <p class="section-kicker">탐색적 규제 시나리오</p>
+        <h2>기업대출 규제가 완화되면 무엇이 달라질 수 있을까?</h2>
+        <p>
+          규제 완화가 인터넷전문은행에 미칠 수 있는 영향을 방향성 중심으로 검토했습니다.
+          특정 대출 증가율을 예측하기보다는, 변화가 발생할 수 있는 경로를 정리하는 데 초점을 두었습니다.
+        </p>
+
+        <div class="scenario-grid">
+          <div class="scenario-card">
+            <h3>대출 포트폴리오 다변화</h3>
+            <p>기업 및 중소사업자 대출 확대는 가계신용 중심의 편중을 완화할 가능성이 있습니다.</p>
+          </div>
+          <div class="scenario-card">
+            <h3>신규 고객군 확보</h3>
+            <p>디지털 심사와 거래 데이터를 활용해 중소기업과 개인사업자 시장으로 확장할 수 있습니다.</p>
+          </div>
+          <div class="scenario-card">
+            <h3>자금조달과 유동성</h3>
+            <p>대출 확대는 예금 기반, 유동성 관리, 건전성 규제 범위 안에서 이루어져야 합니다.</p>
+          </div>
+          <div class="scenario-card">
+            <h3>위험관리 고도화</h3>
+            <p>기업대출 확대에는 신용평가, 사후 모니터링, 산업별 위험관리 역량이 추가로 필요합니다.</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <p class="section-kicker">해석</p>
+        <h2>규제 완화는 여력을 만들 수 있지만 실제 확대를 보장하지는 않습니다.</h2>
+        <p>
+          기업대출 규제가 완화되면 인터넷전문은행이 대출 포트폴리오와 경쟁영역을 넓힐 여지가 생길 수 있습니다.
+          그러나 실제 변화의 크기는 예금 및 자금조달 능력, 자본과 유동성,
+          기업대출 수요, 신용평가 역량, 위험선호도, 시장경쟁 등에 따라 달라질 수 있습니다.
+        </p>
+        <p class="case-note">
+          <strong>분석의 한계:</strong> 본 프로젝트는 복수 자료의 현황 비교와 탐색적 시나리오 분석입니다.
+          규제 변화의 인과효과를 추정하거나 구조모형으로 은행의 재무상태를 예측한 것은 아닙니다.
+        </p>
+      </section>
+
+      <section>
+        <p class="section-kicker">주요 역량</p>
+        <h2>이 프로젝트가 보여주는 역량</h2>
+        <ul>
+          <li>금융규제 및 은행산업 리서치</li>
+          <li>여러 자료원에 보고된 수치의 검증과 차이 조정</li>
+          <li>현황 비교를 위한 데이터 시각화 및 시장 분석</li>
+          <li>가정과 한계를 명시한 시나리오 기반 사고</li>
+          <li>규제 변화가 사업모델에 미치는 영향을 해석하는 능력</li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© 유정민</span>
+      <a href="../index.html">홈으로 돌아가기</a>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="A regulatory and market-structure review of loan-to-deposit ratios and corporate-lending constraints for internet-only banks."
+  />
+  <title>Loan-to-Deposit Regulation and Internet-Only Bank Lending | Jungmin Yoo</title>
+  <link rel="stylesheet" href="../styles.css" />
+  <style>
+    .case-hero { padding: 88px 0 54px; background: var(--surface-soft); }
+    .case-hero h1 { max-width: 980px; font-size: clamp(2.6rem, 6vw, 5rem); }
+    .case-summary { max-width: 860px; color: var(--muted); font-size: 1.15rem; }
+    .case-content { max-width: 920px; }
+    .case-content section { padding: 38px 0; border-bottom: 1px solid var(--line); }
+    .case-content h2 { font-size: 2rem; }
+    .case-content h3 { margin: 1.4rem 0 0.45rem; font-size: 1.12rem; }
+    .case-content li { margin-bottom: 0.65rem; color: var(--muted); }
+    .back-link { display: inline-block; margin-bottom: 1.2rem; color: var(--accent); font-weight: 800; }
+    .overview-grid, .scenario-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 24px;
+    }
+    .overview-card, .scenario-card {
+      padding: 22px;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: #fff;
+    }
+    .overview-card span {
+      display: block;
+      margin-bottom: 0.45rem;
+      color: var(--accent);
+      font-size: 0.76rem;
+      font-weight: 850;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+    .overview-card p, .scenario-card p { margin: 0; color: var(--muted); }
+    .chart-frame {
+      margin: 26px 0 0;
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: #fff;
+    }
+    .chart-frame img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+    }
+    .chart-frame figcaption {
+      margin-top: 12px;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+    .method-flow {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 22px;
+    }
+    .method-step {
+      padding: 18px;
+      border-radius: 14px;
+      background: var(--surface-soft);
+    }
+    .method-step strong { display: block; margin-bottom: 0.4rem; }
+    .method-step p { margin: 0; color: var(--muted); font-size: 0.9rem; }
+    .case-note {
+      padding: 20px;
+      background: var(--surface-soft);
+      border-left: 4px solid var(--accent);
+    }
+    .project-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+      margin-top: 24px;
+    }
+    @media (max-width: 760px) {
+      .overview-grid, .scenario-grid, .method-flow { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="brand" href="../index.html">JY</a>
+      <div class="nav-links">
+        <a href="../index.html#projects">Projects</a>
+        <a href="../index.html#skills">Skills</a>
+        <a href="../index.html#contact">Contact</a>
+        <div class="language-switch" aria-label="Language selection">
+          <a href="loan-to-deposit-regulation.html" aria-current="page">EN</a>
+          <span class="divider">|</span>
+          <a href="../ko/projects/loan-to-deposit-regulation.html" lang="ko">한국어</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="case-hero">
+      <div class="container">
+        <a class="back-link" href="../index.html#projects">← Back to projects</a>
+        <p class="section-kicker">BANKING REGULATION · MARKET ANALYSIS</p>
+        <h1>Loan-to-Deposit Regulation and Internet-Only Bank Lending</h1>
+        <p class="case-summary">
+          Cross-checked loan-to-deposit ratios across multiple sources, visualized
+          the current landscape, and explored how easing corporate-lending constraints
+          could affect the business models and loan portfolios of internet-only banks.
+        </p>
+        <div class="project-actions">
+          <a class="button button-primary" href="#analysis">View analysis</a>
+          <a class="button button-secondary" href="https://github.com/YOUR_GITHUB_USERNAME/loan-to-deposit-regulation-analysis">
+            View repository
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <div class="container case-content">
+      <section>
+        <p class="section-kicker">PROJECT OVERVIEW</p>
+        <h2>Connecting a prudential ratio to competitive strategy</h2>
+        <p>
+          The project began with a practical question: how do loan-to-deposit requirements
+          shape banks’ capacity to expand lending, and could regulatory flexibility allow
+          internet-only banks to diversify beyond their existing retail-focused portfolios?
+        </p>
+
+        <div class="overview-grid">
+          <div class="overview-card">
+            <span>Question</span>
+            <p>How do reported loan-to-deposit ratios differ across institutions and sources?</p>
+          </div>
+          <div class="overview-card">
+            <span>Policy angle</span>
+            <p>What directional changes might follow from easing corporate-lending constraints?</p>
+          </div>
+          <div class="overview-card">
+            <span>Output</span>
+            <p>A source-validated comparison, descriptive visualization, and exploratory scenario review.</p>
+          </div>
+          <div class="overview-card">
+            <span>Interpretation</span>
+            <p>Descriptive and exploratory—not a causal estimate or a balance-sheet forecast.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="analysis">
+        <p class="section-kicker">DATA & VALIDATION</p>
+        <h2>Cross-checking the ratio across multiple sources</h2>
+        <p>
+          Loan-to-deposit figures can vary because sources may use different reporting dates,
+          institution classifications, accounting scopes, or regulatory definitions. I therefore
+          compared figures from several sources rather than relying on a single reported number.
+        </p>
+
+        <div class="method-flow">
+          <div class="method-step">
+            <strong>1. Collect</strong>
+            <p>Gathered institution-level and sector-level figures from multiple public sources.</p>
+          </div>
+          <div class="method-step">
+            <strong>2. Align</strong>
+            <p>Checked reporting periods, units, coverage, and the definition used for the ratio.</p>
+          </div>
+          <div class="method-step">
+            <strong>3. Reconcile</strong>
+            <p>Documented discrepancies and retained comparable observations for visualization.</p>
+          </div>
+          <div class="method-step">
+            <strong>4. Visualize</strong>
+            <p>Converted the validated comparison into a chart for bank- and group-level review.</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <p class="section-kicker">DESCRIPTIVE VIEW</p>
+        <h2>Visualizing the current loan-to-deposit landscape</h2>
+        <p>
+          The chart is intended to make cross-bank differences visible and to identify where
+          internet-only banks sit relative to other institutions. It should be read together
+          with the source and reporting-date notes.
+        </p>
+
+        <figure class="chart-frame">
+          <!-- Replace this SVG with your actual chart, or update the src path below. -->
+          <img
+            src="../assets/images/loan-to-deposit-ratio-chart-en.svg"
+            alt="Placeholder for the loan-to-deposit ratio comparison chart"
+          />
+          <figcaption>
+            Replace the placeholder with the finalized graph. Recommended caption format:
+            “Loan-to-deposit ratios by institution and reporting period. Sources: [source names].”
+          </figcaption>
+        </figure>
+      </section>
+
+      <section>
+        <p class="section-kicker">EXPLORATORY POLICY SCENARIO</p>
+        <h2>What could change if corporate-lending constraints were eased?</h2>
+        <p>
+          I conducted a directional review of how greater regulatory room for corporate lending
+          could affect internet-only banks. The exercise focused on possible mechanisms rather
+          than predicting a specific change in lending volume.
+        </p>
+
+        <div class="scenario-grid">
+          <div class="scenario-card">
+            <h3>Portfolio diversification</h3>
+            <p>Greater access to corporate and small-business lending could reduce concentration in household credit.</p>
+          </div>
+          <div class="scenario-card">
+            <h3>New customer segments</h3>
+            <p>Digital underwriting and transaction data could support expansion into SMEs and sole proprietors.</p>
+          </div>
+          <div class="scenario-card">
+            <h3>Funding and liquidity</h3>
+            <p>Loan growth would still need to remain consistent with deposit funding, liquidity management, and prudential requirements.</p>
+          </div>
+          <div class="scenario-card">
+            <h3>Risk-management demands</h3>
+            <p>Corporate lending would require stronger credit models, monitoring processes, and sector-level risk controls.</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <p class="section-kicker">INTERPRETATION</p>
+        <h2>A regulatory change can create capacity, but not guarantee expansion</h2>
+        <p>
+          The analysis suggests that easing corporate-lending constraints could create room
+          for internet-only banks to broaden their portfolios and competitive positioning.
+          Actual outcomes, however, would depend on funding capacity, capital and liquidity,
+          borrower demand, underwriting capability, risk appetite, and market competition.
+        </p>
+        <p class="case-note">
+          <strong>Analytical limitation:</strong> This was a descriptive source-comparison and
+          exploratory scenario analysis. It does not estimate a causal regulatory effect or
+          forecast a bank’s balance sheet under a formal structural model.
+        </p>
+      </section>
+
+      <section>
+        <p class="section-kicker">SKILLS DEMONSTRATED</p>
+        <h2>What this project shows</h2>
+        <ul>
+          <li>Financial-regulation and banking-industry research</li>
+          <li>Validation and reconciliation of figures reported across multiple sources</li>
+          <li>Descriptive data visualization and comparative market analysis</li>
+          <li>Scenario-based reasoning with explicit assumptions and limitations</li>
+          <li>Translation of regulatory rules into business-model implications</li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© Jungmin Yoo</span>
+      <a href="../index.html">Return home</a>
+    </div>
+  </footer>
+</body>
+</html>
