@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="An API-based panel-data project measuring changes in consumer interest as bank branch networks contracted." />
+  <title>Bank Branch Search Analysis | Jungmin Yoo</title>
+  <link rel="stylesheet" href="../../styles.css" />
+  <style>
+    .case-hero { padding: 88px 0 54px; background: var(--surface-soft); }
+    .case-hero h1 { max-width: 900px; font-size: clamp(2.6rem, 6vw, 5rem); }
+    .case-summary { max-width: 800px; color: var(--muted); font-size: 1.15rem; }
+    .case-content { max-width: 850px; }
+    .case-content section { padding: 34px 0; border-bottom: 1px solid var(--line); }
+    .case-content h2 { font-size: 2rem; }
+    .case-content li { margin-bottom: 0.55rem; color: var(--muted); }
+    .case-note { padding: 20px; background: var(--surface-soft); border-left: 4px solid var(--accent); }
+    .back-link { display: inline-block; margin-bottom: 1.2rem; color: var(--accent); font-weight: 800; }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="brand" href="../../index.html">JY</a>
+      <div class="nav-links">
+        <a href="../../index.html#projects">Projects</a>
+        <a href="../../index.html#skills">Skills</a>
+        <a href="../../index.html#contact">Contact</a>
+        <div class="language-switch" aria-label="Language selection">
+          <a href="bank-branches.html" aria-current="page">EN</a>
+          <span class="divider">|</span>
+          <a href="../../ko/projects/bank_branch/bank-branches.html" lang="ko">한국어</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="case-hero">
+      <div class="container">
+        <a class="back-link" href="../../index.html#projects">← Back to projects</a>
+        <p class="section-kicker">BANKING · API DATA PIPELINE</p>
+        <h1>Bank Branch Search Analysis</h1>
+        <p class="case-summary">An API-based panel-data project measuring changes in consumer interest as banks reduced their physical branch networks.</p>
+      </div>
+    </section>
+    <div class="container case-content">
+      <section>
+        <p class="section-kicker">MOTIVATION & PROBLEM</p>
+        <h2>Did digital transformation affect interest in physical branches?</h2>
+        <p>
+          As digital banking services expand, many banks around the world have reduced the number of their physical branches. 
+          This project explores whether consumer interest in bank branch visits has declined over time in South Korea as the number of physical bank branches has decreased, 
+          using search term statistics as a proxy for branch visit behavior.
+        </p>
+      </section>
+      <section>
+        <p class="section-kicker">DATA & METHOD</p>
+        <!-- <h>Building an analysis-ready dataset</h2> -->
+        <h2>Data sources</h2>
+        <ul>
+          <li> 
+            <a href = "https://www.kfb.or.kr/publicdata/data_other.php?idx=&col=TITLE&sw=%C1%A1%C6%F7&pg=1&gubun=&orderby=&code=&data_year=&SearchOffice=&SearchOpinion=&cate_idx=&BankAll=">
+            Bank Branch Data (Korea Federation of Banks 은행현합회)
+            </a>
+          </li>
+          <li> <a href = "https://api.ncloud-docs.com/docs/en/ai-naver-searchtrend">Naver Search Trend API</a></li>
+          <li> <a href = "https://datalab.naver.com">Naver Datalab Search Trend</a></li>
+        </ul>
+        <h2>Data summary</h2>
+        <ul>
+          <li> 
+            Period : 2017.01 - 2025.05
+          </li>
+          <li>8 banks + 3 internet-only banks</li>
+        </ul>
+
+      </section>
+      <section>
+        <p class="section-kicker"></p>
+        <!-- <h2>Panel construction, trend analysis, and exploratory modeling</h2> -->
+        <h2>Analysis Workflow</h2>
+        <ul>
+          <li>Generated more than 6,000 branch-specific search keywords using branch location information.</li>
+          <li>Collected keyword-level search volume data using the Naver Search Trend API.</li>
+          <li>Cleaned and reshaped the API responses into a bank-by-time panel dataset.</li>
+          <li>Conducted exploratory analysis to examine changes in search interest over time and compare trends across banks.</li>
+        </ul>
+      </section>
+      <section>
+        <p class="section-kicker"></p>
+        <!-- <h2>Panel construction, trend analysis, and exploratory modeling</h2> -->
+        <h2>Tools</h2>
+        <p>Python, Excel, API</p>
+      </section>
+      <section>
+        <p class="section-kicker">RESULTS</p>
+        <h2>What the analysis contributes</h2>
+        <!-- <p>The case study demonstrates practical API use, messy-data transformation, panel-data thinking, and the translation of digital behavior into a business-relevant measure.</p> -->
+        <!-- <p class="case-note"><strong>Portfolio note:</strong> Replace this starter copy with charts, final results, repository links, and a short discussion of limitations.</p> -->
+        <img src="bank_branch_fig1.png" alt="Bank branch graph" width="800">
+      </section>
+      <section>
+        <p class="section-kicker">INTERPRETATION</p>
+        <h2>What the analysis contributes</h2>
+        <!-- <p>The case study demonstrates practical API use, messy-data transformation, panel-data thinking, and the translation of digital behavior into a business-relevant measure.</p> -->
+        <p class="case-note"><strong>Portfolio note:</strong> Replace this starter copy with charts, final results, repository links, and a short discussion of limitations.</p>
+      </section>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© Jungmin Yoo</span>
+      <a href="../../index.html">Return home</a>
+    </div>
+  </footer>
+</body>
+</html>
