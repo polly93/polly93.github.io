@@ -228,7 +228,7 @@ h1 {
 
 .metric {
   display: grid;
-  grid-template-columns: 110px 1fr;
+  grid-template-columns: 170px 1fr;
   gap: 1rem;
   align-items: baseline;
   padding: 1.2rem 1rem;
@@ -241,7 +241,7 @@ h1 {
 
 .metric-value {
   color: var(--accent);
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   font-weight: 850;
   letter-spacing: -0.04em;
 }
